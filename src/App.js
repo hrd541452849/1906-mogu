@@ -36,6 +36,18 @@ function App() {
   return (
     <Suspense fallback={<Loding/>}>
       <div className="App">
+       {/* 根页面，Switch提高性能，Redirect重定向路由 */}
+       <Switch>
+          <Route path = '/home' component = {Home} />
+          <Route path = '/mall' component = {Mall} />
+          <Route path = '/live' component = {Live} />
+          {/* 我的(根据登录状态决定是否重定向到登录页面) */}
+          <Route path = '/mine' render = {() => ( false ? <Redirect to = '/login' /> : <Mine/>)} />
+          <Route path = '/' exact render = {() => (<Redirect to = '/mall' />)} />
+        </Switch>
+
+        {/* 底部导航栏 */}
+        <TabBar />
 
         {/* 子页面 */}
         {/* 搜索 */}
@@ -53,18 +65,6 @@ function App() {
         {/* 登录 */}
         <Route path = '/login' component = {Login} />
         
-       {/* 根页面，Switch提高性能，Redirect重定向路由 */}
-       <Switch>
-          <Route path = '/home' component = {Home} />
-          <Route path = '/mall' component = {Mall} />
-          <Route path = '/live' component = {Live} />
-          {/* 我的(根据登录状态决定是否重定向到登录页面) */}
-          <Route path = '/mine' render = {() => ( false ? <Redirect to = '/login' /> : <Mine/>)} />
-          <Route path = '/' exact render = {() => (<Redirect to = '/home' />)} />
-        </Switch>
-
-        {/* 底部导航栏 */}
-        <TabBar />
     </div>
     </Suspense>
   );
