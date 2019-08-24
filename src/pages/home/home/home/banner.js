@@ -18,16 +18,7 @@ class banner extends Component {
             <div className="swiper-slide" key={item.id}>
               <img src={item.url} alt=""/>
               <h1>{item.id}</h1>
-              <h2>text</h2>
-              <h2>text</h2>
-              <h2>text</h2>
-              <h2>text</h2>
-              <h2>text</h2>
-              <h2>text</h2>
-              <h2>text</h2>
-              <h2>text</h2>
-              <h2>text</h2>
-              <h2>text</h2>
+              
             </div>
           ))
         }      

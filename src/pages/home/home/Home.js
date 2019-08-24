@@ -8,7 +8,78 @@ class Home extends React.Component{
        <div className="pege" id="home">
             <AppHeader></AppHeader>
             <AppScroll className="content">
-            <Banner></Banner> 
+            {/* <Banner></Banner>  */}
+            <h2>text</h2>
+            <h2>text</h2>
+            <h2>text</h2>
+            <h2>text</h2>
+            <h2>text</h2>
+            <h2>text</h2>
+            <h2>text</h2>
+            <h2>text</h2>
+            <h2>text</h2>
+            <h2>text</h2>
+            <h2>text</h2>
+            <h2>text</h2>
+            <h2>text</h2>
+            <h2>text</h2>
+            <h2>text</h2>v
+            <h2>text</h2>
+            <h2>text</h2>
+            <h2>text</h2>
+            <h2>text</h2>
+            <h2>text</h2>
+            <h2>text</h2>
+            <h2>text</h2>
+            <h2>text</h2>
+            <h2>text</h2>
+            <h2>text</h2>
+            <h2>text</h2>
+            <h2>text</h2>
+            <h2>text</h2>
+            <h2>text</h2>
+            <h2>text</h2>
+            <h2>text</h2>
+            <h2>text</h2>
+            <h2>text</h2>
+            <h2>text</h2>
+            <h2>text</h2>
+            <h2>text</h2>
+            <h2>text</h2>
+            <h2>text</h2>
+            <h2>text</h2>v
+            <h2>text</h2>
+            <h2>text</h2>
+            <h2>text</h2>
+            <h2>text</h2>
+            <h2>text</h2>
+            <h2>text</h2>
+            <h2>text</h2>
+            <h2>text</h2>
+            <h2>text</h2>
+            <h2>text</h2>
+            <h2>text</h2>
+            <h2>text</h2>
+            <h2>text</h2>
+            <h2>text</h2>
+            <h2>text</h2>
+            <h2>text</h2>
+            <h2>text</h2>
+            <h2>text</h2>
+            <h2>text</h2>
+            <h2>text</h2>
+            <h2>text</h2>
+            <h2>text</h2>
+            <h2>text</h2>v
+            <h2>text</h2>
+            <h2>text</h2>
+            <h2>text</h2>
+            <h2>text</h2>
+            <h2>text</h2>
+            <h2>text</h2>
+            <h2>text</h2>
+            <h2>text</h2>
+
            </AppScroll>
            
        </div> 
