@@ -1,7 +1,26 @@
-#root {
+html, body, #app-root, .app{
     width: 100%;
     height: 100%;
     font-size: .32rem;
     line-height: 1.5;
     color: #333;
+    background: #fff;
+}
+.page{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 1.306667rem;
+    background: #fefefe;
+}
+.page.subpage{
+    bottom: 0;
+    z-index: 10;
+}
+.page .content{
+    width: 100%;
+    position: absolute;
+    top: 1.173333rem;;
+    bottom: 0;
 }

@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
 import AppHeader from '../../../components/app-header/AppHeader'
+import AppScroll from '../../../components/home/app-scroll'
+import Banner from '../../home/home/home/banner'
 
 class Home extends Component {
     render() {
         return (
-            <div>
+            <div className="page" id="home">
                 <AppHeader/>
-                首页
+               <AppScroll className="content">
+                   <Banner></Banner>
+                  
+              </AppScroll>      
             </div>
         );
     }
