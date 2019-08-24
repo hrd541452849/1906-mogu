@@ -7,12 +7,12 @@ export default class AppScroll extends Component {
     render() {
         let {className,children} = this.props
         return (
-            <div className={`scroll-wrap ${className}`} ref={this.scroll}>
+            <div className={`scroll-wrap ${className}`} ref={this.scrollDOM}>
                 <div className='scroll-content'>
                     {children}
                 </div>
             </div>
-        );
+        )
     }
     componentDidMount(){
         this.scroll = new BScroll(this.scrollDOM.current,{

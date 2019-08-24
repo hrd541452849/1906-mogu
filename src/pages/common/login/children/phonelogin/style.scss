@@ -1,0 +1,103 @@
+#phone-login{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: #fff;
+    .login-wrap{
+        position: absolute;
+        left: 0;
+        top: 1.2rem;
+        bottom: 0;
+        width: 8.666667rem;
+        overflow: hidden;
+        padding: 0 .666667rem;
+        margin-top: 1.333333rem;
+        .phone-input, .code-input{
+            width: 100%;
+            height: 1.333333rem;
+            padding: .266667rem 0;
+            box-sizing: border-box;
+            border-bottom: 1px solid #aaa;
+            color: #333;
+            position: relative;
+            input{
+                width: 100%;
+                height: 100%;
+                border: 0;
+                box-sizing: border-box;
+                padding: 0 .266667rem;
+                font-size: .533333rem;
+            }
+            .tip{
+                width: 1.333333rem;
+                height: 1.333333rem;
+                position: absolute;
+                right: 0;
+                top: 0;
+                text-align: center;
+                line-height: 1.333333rem;
+                .iconfont{
+                    font-size: 1.066667rem;
+                    color: #aaa;
+                    font-style: normal;
+                }
+            }
+            .get-code{
+                width: 2.666667rem;
+                height: 1.333333rem;
+                position: absolute;
+                right: 0;
+                top: 0;
+                text-align: center;
+                line-height: 1.333333rem;
+                font-size: .373333rem;
+                color: #666;
+            }
+        }
+
+        .pass-pic{
+            width: 100%;
+            overflow: hidden;
+            .tip-txt{
+                line-height: .48rem;
+                display: flex;
+                justify-content: space-between;
+                color: #666;
+                margin-top: .8rem;
+            }
+            .show-pic{
+                width: 100%;
+                overflow: hidden;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: .266667rem;
+                .pic-content{
+                    width: 2.08rem;
+                    height: 2.08rem;
+                    background: #666;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+
+        .login-btn{
+            width: 100%;
+            height: 1.333333rem;
+            background: #ff5777;
+            font-size: .48rem;
+            color: #fff;
+            text-align: center;
+            line-height: 1.333333rem;
+            border-radius: 1.333333rem;
+            margin-top: .8rem;
+        }
+
+    }
+
+}

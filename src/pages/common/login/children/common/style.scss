@@ -1,0 +1,21 @@
+.login-header{
+    width: 100%;
+    height: 1.173333rem;
+    border-bottom: 1px solid #DCDBDC;
+    background: #FAFAFA;
+    position: absolute;
+    left: 0;
+    top: 0;
+    .iconfont{
+        position: absolute;
+        left: .266667rem;
+        top: .4rem;
+        font-size: .8rem;
+    }
+    .login-header-title{
+        font-size: .48rem;
+        color: #5e5e5e;
+        line-height: 1.173333rem;
+        text-align: center;
+    }
+}
