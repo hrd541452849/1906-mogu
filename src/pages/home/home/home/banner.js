@@ -17,7 +17,6 @@ class banner extends Component {
           listData.map((item)=>(
             <div className="swiper-slide" key={item.id}>
               <img src={item.url} alt=""/>
-              <h1>{item.id}</h1>
               
             </div>
           ))
@@ -29,21 +28,24 @@ class banner extends Component {
         
         )
     }
-    // componentDidMount(){
-    //     // 初始化轮播图
-    //     this.swiper = new window.Swiper(this.swiperDOM.current, {
-    //       pagination: '.swiper-pagination',
-    //        loop: true
-    //     });
-    //   }
-    //   componentDidUpdate(){
-    //      // 数据发生变化，先销毁，再重新创建轮播图
-    //      this.swiper.destroy();
-    //      this.swiper = new window.Swiper(this.swiperDOM.current, {
-    //        pagination: '.swiper-pagination',
-    //       loop: true
-    //      });
-    //    }
+    componentDidMount(){
+        // 初始化轮播图
+        this.swiper = new window.Swiper(this.swiperDOM.current, {
+          pagination: '.swiper-pagination',
+          autoplay:3000,
+
+           loop: true
+        });
+      }
+      componentDidUpdate(){
+         // 数据发生变化，先销毁，再重新创建轮播图
+         this.swiper.destroy();
+         this.swiper = new window.Swiper(this.swiperDOM.current, {
+           pagination: '.swiper-pagination',
+           
+          loop: true
+         });
+       }
 }
 
 export default banner;

@@ -8,7 +8,7 @@ html, body, #app-root, .app{
     position: absolute;
     top: 0;
     left: 0;
-    bottom: 49px;
+    bottom: 1.306667rem;
     background: #fefefe;
 }
 .page.subpage{
@@ -18,6 +18,6 @@ html, body, #app-root, .app{
 .page .content{
     width: 100%;
     position: absolute;
-    top: 44px;
+    top: 1.173333rem;;
     bottom: 0;
 }

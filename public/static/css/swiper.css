@@ -167,7 +167,7 @@
 /* Pagination Styles */
 .swiper-pagination {
   position: absolute;
-  text-align: center;
+  /* text-align: center; */
   -webkit-transition: 300ms;
   -moz-transition: 300ms;
   -o-transition: 300ms;
@@ -186,7 +186,7 @@
 .swiper-pagination-custom,
 .swiper-container-horizontal > .swiper-pagination-bullets {
   bottom: 10px;
-  left: 0;
+  left: 1%;
   width: 100%;
 }
 /* Bullets */
@@ -216,7 +216,7 @@ button.swiper-pagination-bullet {
 }
 .swiper-pagination-bullet-active {
   opacity: 1;
-  background: #007aff;
+  background: red;
 }
 .swiper-pagination-white .swiper-pagination-bullet-active {
   background: #fff;

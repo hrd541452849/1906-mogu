@@ -1,90 +1,20 @@
-import React from 'react';
-import AppScroll from '../../../components/home/app-scroll'
+import React, { Component } from 'react';
 import AppHeader from '../../../components/app-header/AppHeader'
-import Banner from '../home/home/banner'
-class Home extends React.Component{
-    render(){
-    return(
-       <div className="pege" id="home">
-            <AppHeader></AppHeader>
-            <AppScroll className="content">
-            {/* <Banner></Banner>  */}
-            <h2>text</h2>
-            <h2>text</h2>
-            <h2>text</h2>
-            <h2>text</h2>
-            <h2>text</h2>
-            <h2>text</h2>
-            <h2>text</h2>
-            <h2>text</h2>
-            <h2>text</h2>
-            <h2>text</h2>
-            <h2>text</h2>
-            <h2>text</h2>
-            <h2>text</h2>
-            <h2>text</h2>
-            <h2>text</h2>v
-            <h2>text</h2>
-            <h2>text</h2>
-            <h2>text</h2>
-            <h2>text</h2>
-            <h2>text</h2>
-            <h2>text</h2>
-            <h2>text</h2>
-            <h2>text</h2>
-            <h2>text</h2>
-            <h2>text</h2>
-            <h2>text</h2>
-            <h2>text</h2>
-            <h2>text</h2>
-            <h2>text</h2>
-            <h2>text</h2>
-            <h2>text</h2>
-            <h2>text</h2>
-            <h2>text</h2>
-            <h2>text</h2>
-            <h2>text</h2>
-            <h2>text</h2>
-            <h2>text</h2>
-            <h2>text</h2>
-            <h2>text</h2>v
-            <h2>text</h2>
-            <h2>text</h2>
-            <h2>text</h2>
-            <h2>text</h2>
-            <h2>text</h2>
-            <h2>text</h2>
-            <h2>text</h2>
-            <h2>text</h2>
-            <h2>text</h2>
-            <h2>text</h2>
-            <h2>text</h2>
-            <h2>text</h2>
-            <h2>text</h2>
-            <h2>text</h2>
-            <h2>text</h2>
-            <h2>text</h2>
-            <h2>text</h2>
-            <h2>text</h2>
-            <h2>text</h2>
-            <h2>text</h2>
-            <h2>text</h2>
-            <h2>text</h2>
-            <h2>text</h2>v
-            <h2>text</h2>
-            <h2>text</h2>
-            <h2>text</h2>
-            <h2>text</h2>
-            <h2>text</h2>
-            <h2>text</h2>
-            <h2>text</h2>
-            <h2>text</h2>
+import AppScroll from '../../../components/home/app-scroll'
+import Banner from '../../home/home/home/banner'
 
-           </AppScroll>
-           
-       </div> 
-    )
-}
+class Home extends Component {
+    render() {
+        return (
+            <div className="page" id="home">
+                <AppHeader/>
+               <AppScroll className="content">
+                   <Banner></Banner>
+                  
+              </AppScroll>      
+            </div>
+        );
+    }
 }
 
 export default Home;
