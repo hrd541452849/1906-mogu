@@ -43,7 +43,7 @@ function App() {
           <Route path = '/live' component = {Live} />
           {/* 我的(根据登录状态决定是否重定向到登录页面) */}
           <Route path = '/mine' render = {() => ( false ? <Redirect to = '/login' /> : <Mine/>)} />
-          <Route path = '/' exact render = {() => (<Redirect to = '/mall' />)} />
+          <Route path = '/' exact render = {() => (<Redirect to = '/mall/category' />)} />
         </Switch>
 
         {/* 底部导航栏 */}

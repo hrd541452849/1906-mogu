@@ -1,0 +1,35 @@
+#mall {
+    position: absolute;
+    top: 1.173333rem;
+    bottom: 1.306667rem;
+    width: 100%;
+    .mall-top {
+        display: flex;
+        padding: .24rem;
+        width: 100%;
+        box-sizing: border-box;
+        justify-content: space-between;
+        li {
+            position: relative;
+            width: 2.2rem;
+            height: 2.2rem;
+            text-align: center;
+            img {
+                height: 100%;
+            }
+            &:first-child {
+                background-image: url('/static/images/mall-1-bg.png');
+            }
+            span {
+                position: relative;
+                display: block;
+                bottom: .586667rem;
+                font-size: .373333rem;
+                line-height: .56rem;
+                color: #fff;
+                text-align: center;
+                font-weight: bold;
+            }
+        }
+    }
+}
