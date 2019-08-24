@@ -1,0 +1,151 @@
+#mine{
+    .content{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        background: #f6f6f6;
+        .head-box{
+            width: 100%;
+            height: 5.253333rem;
+            background: #fff url('/static/images/mine-bg.png') no-repeat;
+            background-size: 100%;
+            background-position: 0 -0.8rem;
+            position: relative;
+            .user-info{
+                width: 9.04rem;
+                height: 3.026667rem;
+                background: #fff;
+                position: absolute;
+                left: 50%;
+                bottom: .4rem;
+                transform: translateX(-50%);
+                border-radius: .133333rem;
+                box-shadow: 0 0.02rem 0.32rem rgba(0,0,0,.12);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .user-name{
+                    font-size: .4rem;
+                    color: #5e5e5e;
+                    text-align: center;
+                    margin-top: 1.333333rem;
+                    font-weight: 800;
+                }
+                .user-zone{
+                    width: 2.32rem;
+                    height: .613333rem;
+                    font-size: .32rem;
+                    color: #5e5e5e;
+                    border: .026667rem solid #aaa;
+                    border-radius: .533333rem;
+                    margin-top: .32rem;
+                    line-height: .533333rem;
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .iconfont{
+                        font-size: .373333rem;
+                    }
+                    .txt{
+                        color: #5e5e5e;
+                        margin-left: .133333rem;
+                    }
+                }
+                .user-pic{
+                    width: 1.626667rem;
+                    height: 1.626667rem;
+                    border: .053333rem solid #fff;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: -.8rem;
+                    background: #666;
+                }
+            }
+        }
+        .nav-wrap{
+            width: 100%;
+            padding-left: .533333rem;
+            background: #fff;
+            height: 1.466667rem;
+            overflow: hidden;
+            .nav-list{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: .026667rem solid #eee; 
+                box-sizing: border-box;
+                .nav-title{
+                    .iconfont{
+                        font-size: .533333rem;
+                        margin-right: .4rem;
+                    }
+                    .nav-name{
+                        font-size: .426667rem;
+                        color: #333;
+                    }
+                }
+                .arrow{
+                    margin-right: 1.066667rem;
+                    font-size: .48rem;
+                    color: #ccc;
+                }
+            }
+            &:nth-of-type(3n){
+                margin-bottom: .266667rem;
+                .nav-list{
+                    border-bottom: 0;
+                }
+            }
+            &:nth-of-type(2), &:nth-of-type(3){
+                .nav-list{
+                    .nav-title{
+                        .iconfont{
+                            color: #FFB876;
+                        }
+                    }
+                }
+            }
+            &:nth-of-type(3){
+                .nav-list{
+                    .nav-title{
+                        .iconfont{
+                            font-size: .586667rem;
+                        }
+                    }
+                }
+            }
+            &:nth-of-type(4), &:nth-of-type(5), &:nth-of-type(6){
+                .nav-list{
+                    .nav-title{
+                        .iconfont{
+                            color: #EF8C79;
+                        }
+                    }
+                }
+            }
+            &:nth-of-type(7){
+                .nav-list{
+                    .nav-title{
+                        .iconfont{
+                            color: #B594F1;
+                        }
+                    }
+                }
+            }
+            &:nth-of-type(8), &:nth-of-type(9){
+                .nav-list{
+                    .nav-title{
+                        .iconfont{
+                            color: #88BCF7;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

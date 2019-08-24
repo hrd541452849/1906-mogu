@@ -1,0 +1,95 @@
+#login{
+    width: 100%;
+    overflow: hidden;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    .login-title{
+        width: 8.4rem;
+        height: 1.12rem;
+        margin: 2rem auto 1.333333rem;
+        font-size: .746667rem;
+        color: #444;
+        text-align: center;
+        line-height: 1.12rem;
+    }
+    .user-button{
+        width: 8.4rem;
+        height: 1.333333rem;
+        background: #09bb07;
+        font-size: .48rem;
+        color: #fff;
+        margin: 0 auto;
+        line-height: 1.333333rem;
+        border-radius: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .iconweibo{
+            font-size: .64rem;
+        }
+        .name{
+            margin: 0 .4rem;
+        }
+    }
+    .other-ways{
+        width: 8.4rem;
+        height: .586667rem;
+        margin: 2rem auto 0;
+        padding: 1.066667rem 0 .4rem;
+        text-align: center;
+        line-height: .586667rem;
+        font-size: .4rem;
+        color: #999;
+        position: relative;
+        &::before{
+            content: '';
+            width: .533333rem;
+            height: .026667rem;
+            background: #999;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+    }
+    .other-ways-port{
+        width: 8.4rem;
+        height: 3.253333rem;
+        margin: 0 auto;
+        padding: .666667rem 0;
+        display: flex;
+        box-sizing: border-box;
+        overflow: hidden;
+        justify-content: space-around;
+        .ways-item{
+            width: 1.386667rem;
+            height: 1.92rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .ways-tag{
+                width: 1.173333rem;
+                height: 1.173333rem;
+                border: .026667rem solid #eee;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 1.173333rem;
+                .iconfont{
+                    font-size: .746667rem;
+                    color: #666;
+                }
+            }
+            .ways-name{
+                font-size: .346667rem;
+                color: #666;
+                margin-top: .24rem;
+            }
+        }
+    }
+}
