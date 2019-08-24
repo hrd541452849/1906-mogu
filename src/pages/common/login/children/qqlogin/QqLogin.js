@@ -1,17 +1,18 @@
-import React, { Component } from 'react';
+import React from 'react'
 import './style.scss'
 
-class NameLogin extends Component {
-    render() {
+
+class QqLogin extends React.Component{
+    render(){
         return (
-            <div id="name-login">
+            <div className="qq-login" id="qq-login">
                 <div className="show-info">
                     <img src="/static/images/timg.jpg" alt="" /> 
                     <p className="txt">正在完善中，敬请期待~</p>
                     <button className="back-btn" onClick={this.handleBackAction}>返回</button>
                 </div>
             </div>
-        );
+        )
     }
     handleBackAction = ()=>{
         // console.log(this.props);
@@ -19,4 +20,7 @@ class NameLogin extends Component {
     }
 }
 
-export default NameLogin;
+export default QqLogin;
+    
+
+

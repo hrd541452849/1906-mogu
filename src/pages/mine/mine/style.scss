@@ -4,7 +4,7 @@
         position: absolute;
         left: 0;
         top: 0;
-        bottom: 0;
+        bottom: 1.306667rem;
         background: #f6f6f6;
         .head-box{
             width: 100%;
@@ -145,6 +145,24 @@
                         }
                     }
                 }
+            }
+        }
+        .loginout-wrap{
+            width: 100%;
+            height: 2rem;
+            background: #F6F6F6;
+            box-sizing: border-box;
+            overflow: hidden;
+            .loginout-btn{
+                width: 8.8rem;
+                height: 1.066667rem;
+                margin: .533333rem auto .4rem;
+                background: #ff5777;
+                font-size: .4rem;
+                color: #fff;
+                text-align: center;
+                line-height: 1.066667rem;
+                border-radius: .133333rem;
             }
         }
     }

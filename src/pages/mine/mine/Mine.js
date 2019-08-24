@@ -7,7 +7,7 @@ class Mine extends Component {
         mineNavList : [
             {id: 1, icon: 'iconduihua', name: '消息', arrow: 'iconjiantou1', path: ''},
             {id: 2, icon: 'iconstar', name: '收藏', arrow: 'iconjiantou1', path: ''},
-            {id: 3, icon: 'icongouwuche', name: '购物车', arrow: 'iconjiantou1', path: ''},
+            {id: 3, icon: 'icongouwuche', name: '购物车', arrow: 'iconjiantou1', path: '/goods/cart'},
             {id: 4, icon: 'icondingdan', name: '我的订单', arrow: 'iconjiantou1', path: ''},
             {id: 5, icon: 'iconqiaquan', name: '卡券红包', arrow: 'iconjiantou1', path: ''},
             {id: 6, icon: 'iconqianbao', name: '蘑菇金融', arrow: 'iconjiantou1', path: ''},
@@ -35,7 +35,7 @@ class Mine extends Component {
         );
         //mine页面导航列表
         let navlistDOM = mineNavList.map(item=>(
-            <div className="nav-wrap" key={item.id}>
+            <div className="nav-wrap" key={item.id} onClick={()=>this.handleGoCartPageAction(item)}>
                 <div className="nav-list">
                     <div className="nav-title">
                         <span className={`iconfont ${item.icon}`}></span>
@@ -45,14 +45,26 @@ class Mine extends Component {
                 </div>
             </div>
         ));
+        //mine页面退出登录按钮
+        let loginoutDOM = (
+            <div className="loginout-wrap">
+                <div className="loginout-btn">退出登录</div>
+            </div>
+        );
         return (
             <div id="mine" className="mine">
                 <AppScroll className="content">
                     {headboxDOM}
                     {navlistDOM}
+                    {loginoutDOM}
                 </AppScroll>
             </div>
         );
+    }
+    handleGoCartPageAction = (item)=>{
+        // console.log(this.props)
+        let path = item.path;
+        this.props.history.push(path);
     }
 }
 

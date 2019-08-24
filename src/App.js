@@ -31,6 +31,7 @@ const Cart = lazy (() => import ('./pages/cart/cart/Cart'));
 const Login = lazy (() => import('./pages/common/login/Login'));
 const PhoneLogin = lazy (()=>import('./pages/common/login/children/phonelogin/PhoneLogin'));
 const NameLogin = lazy (()=>import('./pages/common/login/children/namelogin/NameLogin'));
+const QqLogin = lazy (()=>import('./pages/common/login/children/qqlogin/QqLogin'))
 
 
 
@@ -44,7 +45,7 @@ function App() {
           <Route path = '/mall' component = {Mall} />
           <Route path = '/live' component = {Live} />
           {/* 我的(根据登录状态决定是否重定向到登录页面) */}
-          <Route path = '/mine' render = {() => ( false ? <Redirect to = '/login' /> : <Mine/>)} />
+          <Route path = '/mine' render = {(props) => ( false ? <Redirect to = '/login' /> : <Mine {...props}/>)} />
           <Route path = '/' exact render = {() => (<Redirect to = '/mall' />)} />
         </Switch>
 
@@ -68,6 +69,7 @@ function App() {
         <Route path = '/login' component = {Login} />
         <Route path = '/login/phone' component = {PhoneLogin} />
         <Route path = '/login/name' component = {NameLogin} />
+        <Route path = '/login/qq' component = {QqLogin} />
         
     </div>
     </Suspense>
