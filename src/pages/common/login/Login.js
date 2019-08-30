@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
+import {connect} from 'react-redux'
 import './style.scss'
 
 class Login extends Component {
 
     loginWays = [
-        {id: 'QQ', name: 'QQ登录', icon: 'iconicon', path: '/login/qq'},
-        {id: 'phone', name: '免密登录', icon: 'iconshouji', path: '/login/phone'},
-        {id: 'username', name: '账号登录', icon: 'iconsolid-person', path: '/login/name'}
+        {id: 'QQ', name: 'QQ登录', icon: 'iconicon', path: '/mine/login/qq'},
+        {id: 'phone', name: '免密登录', icon: 'iconshouji', path: '/mine/login/phone'},
+        {id: 'username', name: '账号登录', icon: 'iconsolid-person', path: '/mine/login/name'}
     ]
 
     render() {
@@ -39,5 +40,10 @@ class Login extends Component {
         this.props.history.push(item.path);
     }
 }
+const mapStateToProps = (state)=>({
 
-export default Login;
+})
+const mapDispatchToProps = (dispatch)=>({
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(Login);

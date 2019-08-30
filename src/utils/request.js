@@ -13,7 +13,7 @@ export const get = async (url, params = {})=>{
         // 解析数据，当成文本解析
         let result = await response.json();
         // 解析完成，得到结果
-        if(result.state === 'SUCCESS'){
+        if(result.state === 'SUCCESS' || result.code === 0){
             return result;
         }else{
             throw result;
@@ -35,7 +35,7 @@ export const post = async (url, params = {})=>{
         });
         // 接收到响应，处理数据
         let result = await response.json();
-        if(result.state === 'SUCCESS'){
+        if(result.code === 0){
             return result;
         }else{
             throw result;

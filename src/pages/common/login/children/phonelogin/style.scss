@@ -53,7 +53,10 @@
                 text-align: center;
                 line-height: 1.333333rem;
                 font-size: .373333rem;
-                color: #666;
+                color: #444;
+                &.disable{
+                    color: #aaa;
+                }
             }
         }
 

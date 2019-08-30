@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import AppScroll from '../../../components/app-scroll/AppScroll'
+import {connect} from 'react-redux'
+import {requestLoginOut} from '../../../store/modules/mine'
+
 import './style.scss'
 
 class Mine extends Component {
@@ -17,18 +20,19 @@ class Mine extends Component {
     }
     
     render() {
+        let {userInfo, loginoutAction} = this.props;
         let {mineNavList} = this.state;
         //mine页面顶部个人信息展示
         let headboxDOM = (
             <div className="head-box border-bottom">
                 <div className="user-info">
-                    <div className="user-name">为了项目</div>
+                    <div className="user-name">{userInfo.name}</div>
                     <div className="user-zone">
                         <span className="iconfont icongeren"></span>
                         <span className="txt">个人主页</span>
                     </div>
                     <div className="user-pic">
-                        <img src="" />
+                        <img src={userInfo.image} alt="" />
                     </div>
                 </div>
             </div>
@@ -48,7 +52,7 @@ class Mine extends Component {
         //mine页面退出登录按钮
         let loginoutDOM = (
             <div className="loginout-wrap">
-                <div className="loginout-btn">退出登录</div>
+                <div className="loginout-btn" onClick={loginoutAction}>退出登录</div>
             </div>
         );
         return (
@@ -66,6 +70,16 @@ class Mine extends Component {
         let path = item.path;
         this.props.history.push(path);
     }
+    
 }
-
-export default Mine;
+const mapStateToProps = (state)=>({
+    userInfo: state.mine.userInfo
+})
+const mapDispatchToProps = (dispatch)=>({
+    //退出登录
+    loginoutAction(){
+        let action = requestLoginOut();
+        dispatch(action);
+    }
+})
+export default connect(mapStateToProps, mapDispatchToProps)(Mine);

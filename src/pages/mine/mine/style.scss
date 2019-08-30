@@ -62,6 +62,10 @@
                     position: absolute;
                     top: -.8rem;
                     background: #666;
+                    overflow: hidden;
+                    img{
+                        width: 100%
+                    }
                 }
             }
         }
